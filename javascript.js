@@ -1,8 +1,5 @@
 // this script assumes there are no spelling errors and they are case-insensitive
 
-humanScore=0;
-computerScore=0;
-
 function getComputerChoice(){
     compChoice=Math.round(Math.random()*2);
 
@@ -57,9 +54,48 @@ function playRound (humanChoice,compChoice){
         }
 }
 
-const humanSelection = getHumanChoice();
-const compSelection = getComputerChoice();
-playRound(humanSelection,compSelection);
+function playGame(){
+    humanScore=0;
+    computerScore=0;
+    var humanSelection = getHumanChoice();
+    var computerSelection = getComputerChoice();
+    console.log(humanSelection);
+    console.log(computerSelection);
+    playRound(humanSelection,computerSelection);
+    var humanSelection = getHumanChoice();
+    var computerSelection = getComputerChoice();
+    console.log(humanSelection);
+    console.log(computerSelection);
+    playRound(humanSelection,computerSelection);
+    var humanSelection = getHumanChoice();
+    var computerSelection = getComputerChoice();
+    console.log(humanSelection);
+    console.log(computerSelection);
+    playRound(humanSelection,computerSelection);
+    var humanSelection = getHumanChoice();
+    var computerSelection = getComputerChoice();
+    console.log(humanSelection);
+    console.log(computerSelection);
+    playRound(humanSelection,computerSelection);
+    var humanSelection = getHumanChoice();
+    var computerSelection = getComputerChoice();
+    console.log(humanSelection);
+    console.log(computerSelection);
+    playRound(humanSelection,computerSelection);
+    alert("Human Score = " + humanScore +"|" + "Computer Score = " + computerScore) ;
+    if (humanScore === computerScore){
+        return "No Winner :("
+    } else if (humanScore>computerScore){
+        return "You are the Winner :)"
+    } else
+        return "Computer Beats Your Ass Big L!"
+
+}
+
+alert(playGame());
+
+
+
 
 
     
