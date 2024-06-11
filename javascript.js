@@ -1,9 +1,7 @@
 console.log("Hello World");
 
 function getComputerChoice(){
-    compChoice=Math.round(Math.random()*2)
-
-    console.log(compChoice)
+    compChoice=Math.round(Math.random()*2);
 
     if (compChoice === 0){
         compChoice = "rock";
@@ -15,4 +13,11 @@ function getComputerChoice(){
         return compChoice;
 }
 
+function getHumanChoice (){
+    let humanChoice = prompt("Choose one. Rock? Paper? Scissors?");
+    humanChoice = humanChoice.toLowerCase();
+    return humanChoice;
+}
+
 console.log(getComputerChoice());
+console.log(getHumanChoice());
