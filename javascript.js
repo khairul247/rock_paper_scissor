@@ -25,31 +25,31 @@ function playRound (humanChoice,compChoice){
     }  
     else if (humanChoice === "rock"){
         if (compChoice === "paper"){
-            computerScore = computerScore + 1;
+            computerScore++;
             return "You Lose!"
         }
         else {
-            humanScore = humanScore + 1;
+            humanScore++;
             return "You Win!"
         }
     }
     else if (humanChoice === "paper"){
         if (compChoice === "scissors"){
-            computerScore = computerScore + 1;
+            computerScore++;
             return "You Lose!"
         }
         else {
-            humanScore = humanScore + 1;
+            humanScore++;
             return "You Win!"
         }
     }
     else 
         if (compChoice === "rock"){
-            computerScore = computerScore + 1;
+            computerScore++;
             return "You Lose!"
         }
         else {
-            humanScore = humanScore + 1;
+            humanScore++;
             return "You Win!"
         }
 }
