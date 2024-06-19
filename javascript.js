@@ -75,7 +75,7 @@ buttons.forEach((button)=> {
             }
             else{
                 humanScore = computerScore = 0;
-                return "No one wins ;("
+                return "No one wins ;( "
             }
 
         }
