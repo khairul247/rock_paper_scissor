@@ -59,7 +59,6 @@ buttons.forEach((button)=> {
     button.addEventListener('click', (event) =>{
         const buttonId = event.target.id;
         let humanChoice = buttonId;
-        console.log(humanChoice);
         playRound (humanChoice,getComputerChoice());
         scores.textContent = " Your Score : " + humanScore + " | " 
         + "Computer Score : " + computerScore;
